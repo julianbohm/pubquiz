@@ -21,6 +21,8 @@ h1 {
     width: 100vw;
   height: 100vh;
     background: rgb(238, 196, 176);
+    background-image: url(/assets/images/beer-4131737_1280.png); opacity: 0.8;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
