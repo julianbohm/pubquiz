@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    /* utilities */
+
+.container {
+    width: 100vw;
+  height: 100vh;
+    background: rgb(202, 80, 24);
+    display: flex;
+       justify-content: center;
+    align-items: center;
+   
+}
+
+
+
