@@ -5,7 +5,7 @@ let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
+let acceptingAnwers = false;
 let questions = [
 
     {
