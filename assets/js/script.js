@@ -49,7 +49,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: 'What is the alcoholic beverage "sake" made of? ',
+        question: "What is the alcoholic beverage 'sake' made of? ",
         choice1: 'Seafood',
         choice2: 'Soybeans',
         choice3: 'Rice',
@@ -94,4 +94,22 @@ let questions = [
 // constant
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 5;
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+};
+
+getNewQuestion = () => {
+
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+};
+
+
+startGame();
