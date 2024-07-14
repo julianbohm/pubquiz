@@ -104,6 +104,11 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        //go to the end page
+        return window.location.assign('/end.html');
+    }
+
 //to bring question
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
