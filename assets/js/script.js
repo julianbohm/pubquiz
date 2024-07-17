@@ -97,6 +97,8 @@ let questions = [
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 
+startGame();
+
 function startGame() {
     questionCounter = 0;
     score = 0;
@@ -145,19 +147,24 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
         
-        console.log(selectedAnswer == currentQuestion.answer);
-        getNewQuestion();
+        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        
+        if (classToApply === 'correct') {
+            incrementScore(CORRECT_BONUS);
+        }
 
+        selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
     });
-
 });
 
-
-
-
-startGame();
+function incrementScore(num) {
+    score += num;
+}
 
 
 
