@@ -130,7 +130,6 @@ function startGame() {
     });
 
     availableQuestions.splice(questionIndex, 1);
-
     acceptingAnswers = true;
 
 };

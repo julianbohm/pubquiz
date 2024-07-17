@@ -2,47 +2,100 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
-h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
+    
+   }
 
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 10rem 0 5rem;
+    background-color: white;
     text-align: center;
-  }
-    /* utilities */
+    font-family: 'Anton SC', sans-serif;
+    border: black, solid;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);     
+    margin-bottom: 2rem;
+    font-family: 'Anton SC', sans-serif;
+}
+
+/* utilities */
 
 .container {
     width: 100vw;
-  height: 100vh;
-    background: rgb(238, 196, 176);
-    background-image: url(/assets/images/beer-4131737_1280.png); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80 rem;
+    max-width: 80rem;
     padding: 2rem;
-   
+
 }
+
+#welcome > h1 {
+    border: 0.3rem solid black;
+}
+
+#welcome {
+
+    height: 100%;
+    width: 100%;
+    max-width: 40rem;
+
+}
+
+body {
+    background: url('/assets/images/beer\ small.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Anton SC', sans-serif;
+}
+
+.welcome-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 0;
+    margin: 2rem 0.5rem;
+    font-size: 1rem;
+    border: 0.1rem solid black;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.intro-btn {
+
+    font-size: 2rem;
+    padding: 0;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 0;
+    color: rgb(15, 17, 17);
+    
+}
+
+#question {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: black solid;
+    text-align: center;
+}
+
 
 .btn {
     font-size: 1.5rem;
-    padding: 1rem; 
-    width: 20rem;
+    padding: 1rem;
+    width: 5rem;
     text-align: center;
     border: 0.1rem solid black;
     margin-bottom: 1rem;
     color: rgb(15, 17, 17);
-    background-color: rgba(231, 107, 24, 0.425);
-    
+    background-color:rgba(255, 255, 255, 0.534);
+
 }
 
 .btn:hover {
@@ -57,11 +110,11 @@ h1 {
     padding: 0;
     margin: 1rem 0;
     width: 100%;
-    height: 2rem; 
+    height: 2rem;
     line-height: 2rem;
     font-size: 1rem;
     border: 0.1rem solid black;
-    background-color: rgba(209, 23, 23, 0.411);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .choice-container:hover {
@@ -74,11 +127,44 @@ h1 {
 
 .choice-prefix {
     padding: 0 2.5rem;
-    background-color: rgb(233, 219, 206);
-    color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(250, 249, 249);
 }
-
 .choice-text {
     padding: 0 1rem ;
     width: 100%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+@media(min-width: 600px) {
+       
+    body {
+        background-image: url(/assets/images/beer-4131737_1280.png);
+        background-color: aqua;
+       }
+    
+    h1 {
+        background-color: rgba(255, 255, 255, 0.7);
     }
+
+
+    }
+      
+
+    
+       /*  @media (min-width: 1200px) {
+            body{
+                background-image: none;
+                
+            }
+            
+
+            #game {
+                background-color: #FBB117;
+                border: 0.1rem solid black;
+                padding: 6rem;
+            }
+} */
