@@ -134,6 +134,9 @@ function startGame() {
 
 };
 
+
+
+
 choices.forEach(choice => {
     choice.addEventListener('click', (e) => {
         if (!acceptingAnswers) return;
@@ -141,9 +144,11 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
+        
+        console.log(selectedAnswer == currentQuestion.answer);
         getNewQuestion();
 
-
+        
 
     });
 
@@ -153,3 +158,10 @@ choices.forEach(choice => {
 
 
 startGame();
+
+
+
+
+
+
+
