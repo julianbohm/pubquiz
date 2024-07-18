@@ -15,22 +15,35 @@ h1 {
     border: black solid;
 }
 
-h2 {
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    margin-bottom: 2rem;
-    font-family: 'Anton SC', sans-serif;
+
+.wrapper {
+   width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* utilities */
 
+header {
+    background-color: #093141;
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 3px 3px 3px gray;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 60px;
+
+}
+
 .container {
-    width: 100vw;
+   /* width: 100vw; */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
+   /* max-width: 80rem; */
     padding: 2rem;
 
 }
@@ -62,7 +75,7 @@ body {
     padding: 0;
     margin: 2rem 0.5rem;
     font-size: 1rem;
-    border: 0.1rem solid black;
+    border: 0.2rem solid black;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -87,33 +100,16 @@ body {
 }
 
 
-
-
 #question {
     background-color: rgba(255, 255, 255, 0.8);
     border: black solid;
     text-align: center;
-}
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+    font-family: 'Anton SC', sans-serif;
+    }
 
-
-.btn {
-    font-size: 1rem;
-    padding: 1rem;
-    width: 5rem;
-    text-align: center;
-    border: 0.1rem solid black;
-    margin-bottom: 1rem;
-    color: rgb(15, 17, 17);
-    background-color: rgba(255, 255, 255, 0.534);
-
-}
-
-.btn:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 2.4rem 0 rgba(63, 44, 2, 0.767);
-    transform: translateY(-0.5rem);
-    transition: transform 500ms;
-}
 
 .choice-container {
     display: flex;
@@ -149,28 +145,13 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-button {
-    padding: 10px 20px;
-    margin-left: 40%;
-    margin-top: 2rem;
-    font-size: 1em;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #202122;
-}
 
 #finalP {
     display: flex;
+    justify-content: space-evenly;
     text-align: center;
     padding-left: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     
 
 }
@@ -188,12 +169,9 @@ button:hover {
         background-color: aqua;
     }
 
-    h1 {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-
+    
     .choice-container {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
 
@@ -201,16 +179,3 @@ button:hover {
 
 
 
-/*  @media (min-width: 1200px) {
-            body{
-                background-image: none;
-                
-            }
-            
-
-            #game {
-                background-color: #FBB117;
-                border: 0.1rem solid black;
-                padding: 6rem;
-            }
-} */
