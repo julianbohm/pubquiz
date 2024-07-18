@@ -17,6 +17,7 @@ The goal of this project is to simulate a pub quiz game, asking random questions
 
 - __Typography__
     -Anton SC google font will be used for throughout the site, and it will fall back to san serif if the web browser can't render it on the site. 
+    -Anton SC has the feel of old newspaper comic that give the visitor the nostalgia factor of the old comics.
 
 ![Google Fonts 1](assets/images/google%20font.png)
 
@@ -26,9 +27,11 @@ The goal of this project is to simulate a pub quiz game, asking random questions
 ## Features
 In this section, the features that have been implemented on the site will be explained.
 
-- __Heading and Rules__ 
-    - 
-    - The play icon on the play button is from [Font Awesome](https://fontawesome.com/)
+- __Rules__ 
+    - The rules are simple, the is no limit time to answer, 
+    - The visitor has only one chance to get the answer correct, 
+
+    
 
    
 
@@ -70,7 +73,7 @@ In this section, the features that have been implemented on the site will be exp
     - Game Area
 
         ![Game page](assets/images/gamepage.png)
-        
+
 
 - Mobile Responsiveness
     - The lowest to highest maximum screen width for responsive design was done from 330px to 1200px.   
@@ -80,7 +83,7 @@ In this section, the features that have been implemented on the site will be exp
 
 | Bug | Solution |
 | --------------- | --------------- |
-| 1.  |  |
+| 1. Botton with JavaScript to start de game again, did not work after deployment.  | After a lot of try and error, I decided to change plans and use HTML anchor tag to fix it.
 | 2.  |  |
 | 3.  |  |
 | 4.  |  |
@@ -99,9 +102,19 @@ The Pub Quiz was deployed on GitHub page.
     - After a successful save, the GitHub section will display a message to inform you that the site is ready to be published at https://julianbohm.github.io/pubquiz/game.html
 
 ## Credit
- -  A Youtube Javascript tutorial video created by [Coding Artist](https://youtu.be/-qd5sjOfgYY?si=P-blTVa5n_2cj4am) became the framework to help me build a multiple choice quiz. 
+
+### Media
+
+-   The background image  was taken from [Pixabay](https://pixabay.com/)
+-   The Favicon in the Title of the page was taken from [Favicon](https://favicon.io/)
+ -  A Youtube Javascript tutorial video created by [James Q Quick](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF) He was a great source of inspiration and source of information.   
  
- - General Guidance 
-    - [Font](https://fonts.google.com/)
-    - [Icons](https://fontawesome.com/)
-    - [color](https://www.w3schools.com/)
+ ### Sources of inspiration
+
+    - Code Institute Love Maths proyect.
+    -My mentor, Spence, help me understand and correct path when necesary, support and feedback. 
+    - Code Institute Tutors, they will allways help me to find the  path.
+    - [W3Schools](/https://www.w3schools.com/)
+    -all the teammates from my course , allways giving advice and and support for newbies like me.
+
+

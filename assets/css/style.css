@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
     margin: 10rem 0 5rem;
     background-color: white;
@@ -15,12 +15,6 @@ h1 {
     border: black solid;
 }
 
-
-.wrapper {
-   width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /* utilities */
 
@@ -76,6 +70,7 @@ body {
     margin: 2rem 0.5rem;
     font-size: 1rem;
     border: 0.2rem solid black;
+    border-radius: 20px;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -148,16 +143,43 @@ body {
 
 #finalP {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     text-align: center;
     padding-left: 2rem;
     font-size: 2rem;
     
+}
+
+#finalP > span {
+    padding-left: 1.5rem;
+}
+
+#finalBtn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    color: black;
+    margin: 2rem 0.5rem;
+    font-size: 2rem;
+    border : 0.2rem solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
 
 }
 
+#finalBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 2.5rem 0 rgba(63, 44, 2, 0.767);
+    transform: translateY(-0.5rem);
+    transition: transform 500ms;
+}
+
 #end {
-    background-color: rgba(255, 255, 255, 0.466);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 0 1rem;
 
 }
