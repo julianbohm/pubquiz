@@ -4,5 +4,5 @@ const score = localStorage.getItem('mostRecentScore');
 finalScore.innerText = score;
 
 function restartQuiz() {
-    window.location.assign('/index.html');
+    window.location.assign('../index.html');
 }
