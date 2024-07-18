@@ -111,15 +111,18 @@ function startGame() {
  * @returns  redirect to end.html url
  */
 
- function getNewQuestion() {
+function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        // Store the score in localStorage
+        localStorage.setItem('mostRecentScore', score);
         return window.location.assign('/end.html');
     }
+
 
     /**
      * to bring question
      */
-     
+
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -146,29 +149,22 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        
+
         const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        if (classToApply === 'correct') {
+        if (classToApply == 'correct') {
             incrementScore(CORRECT_BONUS);
-        }
+        };
 
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 1000);
+        }, 500);
     });
 });
 
 function incrementScore(num) {
     score += num;
-}
-
-
-
-
-
-
-
+};
