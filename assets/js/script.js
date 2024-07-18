@@ -89,7 +89,7 @@ let questions = [
         choice4: '2010',
         answer: 2,
     },
-]
+];
 
 
 // constant
@@ -104,7 +104,7 @@ function startGame() {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-};
+}
 
 /**
  * 
@@ -130,7 +130,7 @@ function getNewQuestion() {
 
     // to bring answers choices to questions
     choices.forEach(choice => {
-        const number = choice.dataset['number'];
+        const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
     });
 
@@ -167,4 +167,4 @@ choices.forEach(choice => {
 
 function incrementScore(num) {
     score += num;
-};
+}
