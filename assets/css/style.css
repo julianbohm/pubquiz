@@ -66,18 +66,28 @@ body {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.7);
 }
+.welcome-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 2.5rem 0 rgba(63, 44, 2, 0.767);
+    transform: translateY(-0.5rem);
+    transition: transform 500ms;
+}
 
 
 .intro-btn {
 
     font-size: 2rem;
+    text-decoration: none;
     padding: 0;
-    width: 20rem;
     text-align: center;
+    width: 10rem;
     margin-bottom: 0;
     color: rgb(15, 17, 17);
 
 }
+
+
+
 
 #question {
     background-color: rgba(255, 255, 255, 0.8);
@@ -107,6 +117,7 @@ body {
 
 .choice-container {
     display: flex;
+    text-align: center;
     padding: 0;
     margin: 1rem 0;
     width: 100%;

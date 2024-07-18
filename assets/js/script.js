@@ -94,7 +94,7 @@ let questions = [
 
 // constant
 
-const CORRECT_BONUS = 10;
+const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = 5;
 
 startGame();
@@ -115,7 +115,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         // Store the score in localStorage
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('/end.html');
+        return window.location.assign('/pubquiz/end.html');
     }
 
 
@@ -137,7 +137,7 @@ function getNewQuestion() {
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
 
-};
+}
 
 
 
@@ -148,13 +148,13 @@ choices.forEach(choice => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         if (classToApply == 'correct') {
             incrementScore(CORRECT_BONUS);
-        };
+        }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
