@@ -115,7 +115,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         // Store the score in localStorage
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('/pubquiz/end.html');
+        return window.location.assign('end.html');
     }
 
 
