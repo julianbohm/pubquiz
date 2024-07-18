@@ -55,7 +55,7 @@ header {
 }
 
 body {
-    background: url('../images/beer\ small.png') no-repeat center center fixed;
+    background: url('../images/beersmall.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Anton SC', sans-serif;
 }
@@ -114,7 +114,7 @@ body {
     width: 100%;
     height: 3rem;
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 0.1rem solid black;
     background-color: rgba(255, 255, 255, 0.5);
 }
