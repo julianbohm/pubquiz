@@ -1,3 +1,4 @@
+/* General reset for padding and margins */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
 
 }
 
+/* Style for main heading (h1) */
 h1 {
     font-size: 3rem;
     font-weight: 600;
@@ -15,9 +17,7 @@ h1 {
     border: black solid;
 }
 
-
-/* utilities */
-
+/* Header style */
 header {
     background-color:rgba(255, 255, 255, 0.7);
     position: relative;
@@ -32,6 +32,7 @@ header {
 
 }
 
+/* Footer style */
 footer {
     background-color:rgba(255, 255, 255, 0.7);
     position: relative;
@@ -46,6 +47,7 @@ footer {
 
 }
 
+/* Main container for centering content */
 .container {
    /* width: 100vw; */
     height: 100vh;
@@ -62,20 +64,20 @@ footer {
 }
 
 #welcome {
-
     width: 100%;
     max-width: 40rem;
 
 }
 
+/* Body styling with background image */
 body {
     background: url('../images/beersmall.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Anton SC', sans-serif;
 }
 
+/* Style for the welcome container */
 .welcome-container {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +90,8 @@ body {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 1);
 }
+
+/* Hover effect for welcome button */
 .welcome-container:hover {
     cursor: pointer;
     box-shadow: 0 0.5rem 2.5rem 0 rgba(63, 44, 2, 0.767);
@@ -95,9 +99,7 @@ body {
     transition: transform 500ms;
 }
 
-
 .intro-btn {
-
     font-size: 2rem;
     text-decoration: none;
     padding: 0;
@@ -108,7 +110,7 @@ body {
 
 }
 
-
+/* Questions section styling */
 #question {
     background-color: rgba(255, 255, 255, 0.9);
     border: black solid;
@@ -120,7 +122,7 @@ body {
     font-family: 'Anton SC', sans-serif;
     }
 
-
+/* Styling for choice containers (quiz answers) */
 .choice-container {
     display: flex;
     text-align: center;
@@ -134,43 +136,44 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Hover effect for choice containers */
 .choice-container:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 2.4rem 0 rgba(63, 44, 2, 0.767);
     transform: translateY(-.5rem);
     transition: transform 500ms;
-
 }
 
+/* Prefix (A, B, C, D) for each choice */
 .choice-prefix {
     padding: 0 2.5rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: rgb(250, 249, 249);
 }
 
+/* Choice text styling */
 .choice-text {
     padding: 0 1rem;
     width: 100%;
     color: black;
-    
 }
 
-
+/* Final score paragraph styling */
 #finalP {
     display: flex;
     justify-content:center;
     text-align: center;
     padding-left: 2rem;
-    font-size: 2rem;
-    
+    font-size: 2rem; 
 }
 
+/* Styling for final score span */
 #finalP > span {
     padding-left: 1.5rem;
 }
 
+/* Final button styling */
 #finalBtn {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,9 +186,9 @@ body {
     border-radius: 25px;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 1);
-
 }
 
+/* Hover effect for final button */
 #finalBtn:hover {
     cursor: pointer;
     box-shadow: 0 0.5rem 2.5rem 0 rgba(63, 44, 2, 0.767);
@@ -193,13 +196,14 @@ body {
     transition: transform 500ms;
 }
 
+/* Styling for the end container */
 #end {
    margin-top: 10rem;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 0 1rem;
-
 }
 
+/* Media query for larger screens (minimum width: 600px) */
 @media(min-width: 600px) {
 
     body {
@@ -207,12 +211,10 @@ body {
         background-color: aqua;
     }
 
-    
+    /* Larger font size for choices on bigger screens */
     .choice-container {
         font-size: 1.8rem;
     }
-
-
 }
 
 

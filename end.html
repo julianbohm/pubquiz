@@ -2,28 +2,35 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title and links to stylesheets and icons -->
     <title>Pub Quiz Welcome</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Preconnect to Google Fonts and import custom font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Main section that displays quiz completion message and score -->
     <div id="end">
         <h1>Quiz Completed!</h1>
         <div>
+            <!-- Final score will be dynamically inserted here -->
             <p  id="finalP">Your Final Score  <span id="finalScore"></span></p>
             <a id="finalBtn"  href="index.html" >Try Again!!</a>
           </div>
     </div>
-
+    <!-- Link to JavaScript to handling end quiz-->
     <script src="assets/js/end.js"></script>
 </body>
 

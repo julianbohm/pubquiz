@@ -1,14 +1,18 @@
+// Getters for DOM
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
+// game variables
+const CORRECT_BONUS = 1;
+const MAX_QUESTIONS = 5;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 let acceptingAnswers = false;
 
+// list of questions
 let questions = [
-
     {
         question: 'What is the name of the element with the chemical symbol "He"? ',
         choice1: 'Helium',
@@ -91,14 +95,10 @@ let questions = [
     },
 ];
 
-
-// constant
-
-const CORRECT_BONUS = 1;
-const MAX_QUESTIONS = 5;
-
-startGame();
-
+/**
+ * Starts the game and sets up variables
+ * call to get new question
+ */
 function startGame() {
     questionCounter = 0;
     score = 0;
@@ -107,10 +107,10 @@ function startGame() {
 }
 
 /**
- * 
+ * Checks if end of game has been reached and
+ * gets new question and loads page variables
  * @returns  redirect to end.html url
  */
-
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         // Store the score in localStorage
@@ -118,17 +118,13 @@ function getNewQuestion() {
         return window.location.assign('end.html');
     }
 
-
-    /**
-     * to bring question
-     */
-
+    // increment the question counter
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    // to bring answers choices to questions
+    // Assign choices
     choices.forEach(choice => {
         const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
@@ -136,11 +132,7 @@ function getNewQuestion() {
 
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
-
 }
-
-
-
 
 choices.forEach(choice => {
     choice.addEventListener('click', (e) => {
@@ -150,7 +142,8 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset.number;
 
-        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        const classToApply = selectedAnswer == currentQuestion.answer ? 
+        'correct' : 'incorrect';
 
         if (classToApply == 'correct') {
             incrementScore(CORRECT_BONUS);
@@ -165,6 +158,12 @@ choices.forEach(choice => {
     });
 });
 
+/**
+ * Increments the score
+ * @param {*} num
+ */
 function incrementScore(num) {
     score += num;
 }
+
+startGame();
