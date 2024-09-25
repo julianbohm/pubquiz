@@ -25,7 +25,7 @@ The goal of this project is to create a fun pub quiz game. Players can compete w
 - __Color Pallete__ 
     - the proyect have strong retro colors, to recreate the feeling of 90 vibes, comics, pop art. 
     - the background is aqua color and a beer image that is mainly dark yellow, and this color make good contrasto to the black and white of the questions.   
-    ![Pallete](assets/images/Pallete.png)
+    ![Pallete](assets/images/pallete.png)
 
 
 
@@ -38,6 +38,8 @@ The goal of this project is to create a fun pub quiz game. Players can compete w
 
 
 ## Features
+
+### Game Features
 In this section, the features that have been implemented on the site will be explained.
 
 - __Rules__ 
@@ -61,37 +63,49 @@ In this section, the features that have been implemented on the site will be exp
     - At the end of the game, a summary is shown that displays how many questions the player answered correctly out of the 5 presented.
     - The total score is displayed, along with a message encouraging the player to try again or share their results with friends.
 
+### Future Features
+
+- __Timer for Each Question__
+    - Add a countdown timer to each question to increase the challenge. Players would have a limited amount of time (e.g., 10 seconds) to answer each question before moving on to the next one automatically.
+- __Leaderboard System__
+    - Implement leaderboard, where players can save their scores and compare their results with friends or other players. 
+- __Difficulty Levels__
+    - Add different difficulty levels (Easy, Medium, Hard). The difficulty can be based on the complexity of the questions or by introducing penalties for incorrect answers at harder levels.
+- __Audio and Visual Feedback__ 
+    - Add audio effects (e.g., a correct answer "ding" or incorrect answer "buzz") and animations to make the game more interactive and engaging.
 ---
 
 
 ## Testing 
 
-- HTML Validator and CSS Validator
-    - Both pass with out any obsevation,  
+- __HTML Validator and CSS Validator__
+    - Both the HTML and CSS files passed through validators without any errors or warnings.
+  
     
     ![HTML validator](assets/images/html-checkers.png)
     ![CSS validator](assets/images/css-checker.png)
     
 
-- JavaScript Check
-    - This javascript has a recurent errors, was the use of [] Braquets instead of the more clear dot notatios, after correcting it, the where no more errors.
+- __JavaScript Check__
+    - Initially, JavaScript errors were encountered due to using square brackets [] instead of the clearer dot notation. After correcting this, the code ran smoothly without errors.
  
 
-- Accessibility 
+- __Accessibility__ 
+    - The site was checked for accessibility issues. Features like sufficient color contrast, clear typography, and well-labeled buttons were implemented to ensure an inclusive experience.
 
-    - Welcome Menu
+    - __Welcome Menu__
 
-        ![Welcome Page](assets/images/Welcome-page.png)
+        ![Welcome Page](assets/images/welcome-page.png)
 
 
-    - Game Area
+    - __Game Area__
 
         ![Game page](assets/images/gamepage.png)
 
 
 - Mobile Responsiveness
-    - The lowest to highest maximum screen width for responsive design was done from 330px to 1200px.   
-    - Mobile responsiveness was decided to use 330 because that is the norm of the..........
+    - The site was tested for responsiveness across a variety of screen sizes, ranging from 330px (for smaller mobile devices) to 1200px (large desktops).   
+    - A mobile-first approach was used to ensure the site looks and functions well on all device sizes, including smartphones, tablets, and desktops.
 
 ---
 
@@ -99,12 +113,12 @@ In this section, the features that have been implemented on the site will be exp
 
 | Bug | Solution |
 | --------------- | --------------- |
-| 1. Botton with JavaScript to start de game again, did not work after deployment.  | After a lot of try and error, I decided to change plans and use HTML anchor tag to fix it.
-| 2.  |  |
-| 3.  |  |
-| 4.  |  |
-| 5.  |  |
-| 6.  |  | 
+| 1. Images from background do not loading  |Path was corrected  |
+| 2. Botton with JavaScript to start de game again, did not work after deployment.  | After a lot of try and error, I decided to change plans and use HTML anchor tag to fix it.
+| 3. Game options would overlap on small screens.  | CSS media queries were added to adjust the layout and font size for smaller screen widths. |
+| 4. The Let’s Play button was misaligned on mobile.  | Padding and margins were adjusted using media queries to center the button correctly on all screen sizes. |
+
+ 
 
 
 ---
@@ -134,17 +148,16 @@ To clone this repository to your local machine, follow these steps:
 
 ---
 
+
 ## Credits
 
----
-
-Media
+__Media__
 
 - The background image  was taken from [Pixabay](https://pixabay.com/)
 - The Favicon in the Title of the page was taken from [Favicon](https://favicon.io/)
 - A Youtube Javascript tutorial video created by [James Q Quick](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF) He was a great source of inspiration and source of information.   
  
-Sources of inspiration
+__Sources of inspiration__
 
 - Code Institute Love Maths proyect.
 - My mentor, Spence, help me understand and correct path when necesary, support and feedback. 
